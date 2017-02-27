@@ -5,4 +5,4 @@ from .models import Person
 # Create your views here.
 def detail(request):
     person = Person.objects.first()
-    return render (request, "hello/person.html", {"person": person, } )
+    return render(request, "hello/person.html", {"person": person, })
