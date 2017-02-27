@@ -7,5 +7,5 @@ class PersonAdmin(admin.ModelAdmin):
 
 admin.site.register(Person, PersonAdmin)
 
-#admin.site.register(StudentModelForm)
+
 # Register your models here.
