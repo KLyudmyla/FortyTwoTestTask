@@ -2264,6 +2264,7 @@ th {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -4992,8 +4993,8 @@ a.badge:focus {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 18px;
+
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
