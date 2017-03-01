@@ -27,7 +27,7 @@ class PersonDetailTest(TestCase):
 
     def test_pages_person_empty(self):
         """
-        checking template with empty DB 
+        checking template with empty DB
         """
         client = Client()
         response = client.get('/')
