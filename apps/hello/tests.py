@@ -17,7 +17,7 @@ class PersonDetailTest(TestCase):
 
     def test_person_detail(self):
         """
-        checking info in the template
+        Test for view, returning hard-coded data for the template
         """
         client = Client()
         response = client.get('/')
