@@ -6,13 +6,13 @@ from. models import Person
 class PersonDetailTest(TestCase):
     class Meta:
         model = Person
-    
+
     def test_pages_person_detail_200(self):
         """
         Test for working template
         """
         client = Client()
-        response=client.get('/')
+        response = client.get('/')
         self.assertEqual(response.status_code, 200)
 
     def test_person_detail(self):
@@ -24,7 +24,6 @@ class PersonDetailTest(TestCase):
         self.assertContains(response, 'Lyudmyla')
         self.assertContains(response, "Kaluzhynova")
         self.assertContains(response, "biography")
-
 
     def test_pages_person_empty(self):
         """
