@@ -39,7 +39,6 @@ class PersonDetailTest(TestCase):
         self.assertContains(response, 'Skype')
         self.assertContains(response, "Other contacts")
 
-
     def test_pages_person_empty(self):
         """
         checking template with empty DB
