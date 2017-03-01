@@ -13,7 +13,7 @@ class PersonDetailTest(TestCase):
         person1 = Person.objects.create(
 		               name = "Lyuda",
                                surname = "Kaluzhynova",
-                               bio = "I was born in Kharkiv",
+                               bio = "biography",
                                date_birth = '1980-06-14',
 		               email = 'vlyuda@mail.ru',
                                jabber = 'lyudmyla@22cc.co', 
@@ -28,16 +28,16 @@ class PersonDetailTest(TestCase):
         person1 = Person.objects.create(
 		               name = "Lyuda",
                                surname = "Kaluzhynova",
-                               bio = "I was born in Kharkiv",
+                               bio = "biography",
                                date_birth = '1980-06-14',
 		               email = 'vlyuda@mail.ru',
                                jabber = 'lyudmyla@22cc.co', 
                                skype = 'kaluzhynoval', 
                                   )
-        response = client.get(self.url)
+        response = client.get('/')
         self.assertContains(response, 'Lyudmyla')
         self.assertContains(response, "Kaluzhynova")
-        self.assertContains(response, "I live in Kharkiv")
+        self.assertContains(response, "biography")
  #       self.assertContains(response, "1980-06-14")
   #      self.assertContains(response, "vlyuda@mail.ru")
   #      self.assertContains(response, "lyudmyla@22cc.co")
