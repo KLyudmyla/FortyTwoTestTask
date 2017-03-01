@@ -8,21 +8,26 @@ class PersonDetailTest(TestCase):
         model = Person
     
     def test_pages_person_detail_200(self):
+        """
+        Test for working template
+        """
         client = Client()
         person1 = Person.objects.create(
                                name="Lyuda",
                                surname="Kaluzhynova",
                                bio="biography",
                                date_birth='1980-06-14',
-		               email='vlyuda@mail.ru',
+                               email='vlyuda@mail.ru',
                                jabber='lyudmyla@22cc.co',
                                skype='kaluzhynoval',
-			       )
+                               )
         response=client.get('/')
         self.assertEqual(response.status_code, 200)
 
-
     def test_person_detail(self):
+        """
+        checking info in the template
+        """
         client = Client()
         person1 = Person.objects.create(
                                name="Lyuda",
@@ -32,7 +37,7 @@ class PersonDetailTest(TestCase):
 		               email='vlyuda@mail.ru',
                                jabber='lyudmyla@22cc.co',
                                skype='kaluzhynoval', 
-                                  )
+                               )
         response = client.get('/')
         self.assertContains(response, 'Lyudmyla')
         self.assertContains(response, "Kaluzhynova")
@@ -40,6 +45,9 @@ class PersonDetailTest(TestCase):
 
 
     def test_pages_person_empty(self):
+        """
+        checking template with empty DB 
+        """
         client = Client()
         response = client.get('/')
         self.assertEqual(response.status_code, 200)
