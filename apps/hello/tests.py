@@ -24,6 +24,21 @@ class PersonDetailTest(TestCase):
         self.assertContains(response, 'Lyudmyla')
         self.assertContains(response, "Kaluzhynova")
         self.assertContains(response, "biography")
+        self.assertContains(response, '06-02-1980')
+        self.assertContains(response, "kaluzhynova@gmail.com")
+        self.assertContains(response, "klyudmyla@42cc.co")
+        self.assertContains(response, 'klyudmyla')
+        self.assertContains(response, "Other contacts")
+        self.assertContains(response, "Name")
+        self.assertContains(response, 'Last name')
+        self.assertContains(response, "Date of birth")
+        self.assertContains(response, "bio")
+        self.assertContains(response, 'Contacts')
+        self.assertContains(response, "Email")
+        self.assertContains(response, "Jabber")
+        self.assertContains(response, 'Skype')
+        self.assertContains(response, "Other contacts")
+
 
     def test_pages_person_empty(self):
         """
