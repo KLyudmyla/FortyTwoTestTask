@@ -1,1 +1,56 @@
-[{"fields": {"first_name": "", "is_superuser": true, "last_name": "", "user_permissions": [], "password": "pbkdf2_sha256$12000$ysPSTXO2khcV$fQrbunXhyLTJMVnjGWG122Yk6/k3rqF8LWSCxfwSuV0=", "date_joined": "2017-02-24T16:41:56.904Z", "groups": [], "is_active": true, "is_staff": true, "last_login": "2017-02-24T16:41:56.904Z", "username": "lyudmyla", "email": "kaluzhynova@gmail.com"}, "pk": 1, "model": "auth.user"}, {"fields": {"first_name": "", "is_superuser": true, "last_name": "", "user_permissions": [], "password": "pbkdf2_sha256$12000$lVgSgxF8DOgy$c7twxWqROF3hCMH35G7RHiv+4aNHWTQykaEOOKXIoDk=", "date_joined": "2017-02-27T10:38:08Z", "groups": [], "is_active": true, "is_staff": true, "last_login": "2017-03-02T10:58:59.632Z", "username": "admin11", "email": "kaluzhynova@gmail.com"}, "pk": 2, "model": "auth.user"}, {"fields": {"first_name": "", "is_superuser": false, "last_name": "", "user_permissions": [], "password": "pbkdf2_sha256$12000$cV1uD8d6cjbE$3AI3ESAyYDSzKvswiK4RUw4y86S7KdYE+rWodqbSd9o=", "date_joined": "2017-02-27T13:29:59.929Z", "groups": [], "is_active": true, "is_staff": false, "last_login": "2017-02-27T13:29:59.929Z", "username": "admin", "email": ""}, "pk": 3, "model": "auth.user"}]
+[
+{
+  "pk": 1,
+  "model": "auth.user",
+  "fields": {
+    "email": "kaluzhynova@gmail.com",
+    "first_name": "",
+    "is_staff": true,
+    "is_superuser": true,
+    "is_active": true,
+    "password": "pbkdf2_sha256$12000$ysPSTXO2khcV$fQrbunXhyLTJMVnjGWG122Yk6/k3rqF8LWSCxfwSuV0=",
+    "date_joined": "2017-02-24T16:41:56.904Z",
+    "username": "lyudmyla",
+    "groups": [],
+    "last_name": "",
+    "user_permissions": [],
+    "last_login": "2017-02-24T16:41:56.904Z"
+  }
+},
+{
+  "pk": 2,
+  "model": "auth.user",
+  "fields": {
+    "email": "kaluzhynova@gmail.com",
+    "first_name": "",
+    "is_staff": true,
+    "is_superuser": true,
+    "is_active": true,
+    "password": "pbkdf2_sha256$12000$lVgSgxF8DOgy$c7twxWqROF3hCMH35G7RHiv+4aNHWTQykaEOOKXIoDk=",
+    "date_joined": "2017-02-27T10:38:08Z",
+    "username": "admin11",
+    "groups": [],
+    "last_name": "",
+    "user_permissions": [],
+    "last_login": "2017-03-02T11:09:07.080Z"
+  }
+},
+{
+  "pk": 3,
+  "model": "auth.user",
+  "fields": {
+    "email": "",
+    "first_name": "",
+    "is_staff": false,
+    "is_superuser": false,
+    "is_active": true,
+    "password": "pbkdf2_sha256$12000$cV1uD8d6cjbE$3AI3ESAyYDSzKvswiK4RUw4y86S7KdYE+rWodqbSd9o=",
+    "date_joined": "2017-02-27T13:29:59.929Z",
+    "username": "admin",
+    "groups": [],
+    "last_name": "",
+    "user_permissions": [],
+    "last_login": "2017-02-27T13:29:59.929Z"
+  }
+}
+]
