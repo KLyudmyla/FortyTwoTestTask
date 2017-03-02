@@ -7,7 +7,7 @@
        
                 <tr><td>Name</td><td> {{ person.name }} </td></tr>
                 <tr><td>Last name</td><td> {{ person.surname }}</td></tr>
-                <tr><td>Date of birth</td><td>{{ person.date_birth}}</td></tr>
+                <tr><td>Date of birth</td><td>{{ person.date_birth|date:"Y-m-d" }}</td></tr>
                 <tr><td>Bio</td><td> {{ person.bio }}</td></tr>
    
             </table>
