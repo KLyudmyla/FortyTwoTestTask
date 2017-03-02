@@ -1,1 +1,1 @@
-[{"fields": {"surname": "Kaluzhynova", "bio": "I live in Kharkiv", "jabber": "klyudmyla@42cc.co", "name": "Lyudmyla", "email": "kaluzhynova@gmail.com", "skype": "kaluzhynoval", "other_contacts": "ICQ 178396342", "date_birth": "1980-02-06"}, "pk": 1, "model": "hello.person"}]
+[{"model": "hello.person", "pk": 1, "fields": {"other_contacts": "Other contacts", "name": "Lyudmyla", "email": "kaluzhynova@gmail.com", "date_birth": "1980-02-06", "bio": "biography", "skype": "kaluzhynoval", "jabber": "klyudmyla@42cc.co", "surname": "Kaluzhynova"}}]
