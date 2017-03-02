@@ -6,5 +6,3 @@ from .models import Person
 def detail(request):
     person = Person.objects.first()
     return render(request, "hello/person.html", {"person": person, })
-
-

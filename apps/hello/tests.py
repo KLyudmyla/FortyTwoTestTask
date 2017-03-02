@@ -2,6 +2,7 @@ from datetime import date
 from django.test import TestCase, Client
 from. models import Person
 
+
 # Create your tests here.
 class PersonDetailTest(TestCase):
     def test_pages_person_detail_200(self):
@@ -70,7 +71,6 @@ class PersonModelTest(TestCase):
         """
         Test first instance that would be in template
         """
-        client = Client()
         person = Person.objects.first()
         self.assertIsInstance(person.date_birth, date)
         page = self.client.get('/')
