@@ -22,7 +22,7 @@ class PersonDetailTest(TestCase):
         self.assertContains(response, 'Lyudmyla')
         self.assertContains(response, "Kaluzhynova")
         self.assertContains(response, "biography")
-        self.assertContains(response, '06-02-1980')
+        self.assertContains(response, '1980-02-06')
         self.assertContains(response, "kaluzhynova@gmail.com")
         self.assertContains(response, "klyudmyla@42cc.co")
         self.assertContains(response, 'klyudmyla')
