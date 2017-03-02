@@ -1,0 +1,56 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "last_login": "2017-02-24T16:41:56.904Z",
+    "user_permissions": [],
+    "date_joined": "2017-02-24T16:41:56.904Z",
+    "is_staff": true,
+    "password": "pbkdf2_sha256$12000$ysPSTXO2khcV$fQrbunXhyLTJMVnjGWG122Yk6/k3rqF8LWSCxfwSuV0=",
+    "last_name": "",
+    "is_superuser": true,
+    "username": "lyudmyla",
+    "is_active": true,
+    "groups": [],
+    "first_name": "",
+    "email": "kaluzhynova@gmail.com"
+  },
+  "pk": 1
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "last_login": "2017-03-02T19:59:02.486Z",
+    "user_permissions": [],
+    "date_joined": "2017-02-27T10:38:08Z",
+    "is_staff": true,
+    "password": "pbkdf2_sha256$12000$lVgSgxF8DOgy$c7twxWqROF3hCMH35G7RHiv+4aNHWTQykaEOOKXIoDk=",
+    "last_name": "",
+    "is_superuser": true,
+    "username": "admin11",
+    "is_active": true,
+    "groups": [],
+    "first_name": "",
+    "email": "kaluzhynova@gmail.com"
+  },
+  "pk": 2
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "last_login": "2017-03-02T20:31:25.700Z",
+    "user_permissions": [],
+    "date_joined": "2017-03-02T20:06:49.446Z",
+    "is_staff": true,
+    "password": "pbkdf2_sha256$12000$5amRUnwNK6uR$I8hFdIr3ngcjX7Psj3Np3fXVB9zK4+8as0ZzpOF17lo=",
+    "last_name": "",
+    "is_superuser": true,
+    "username": "admin",
+    "is_active": true,
+    "groups": [],
+    "first_name": "",
+    "email": "vlyuda@mail.ru"
+  },
+  "pk": 3
+}
+]
