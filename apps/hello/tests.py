@@ -1,12 +1,10 @@
 from django.test import TestCase, Client
 from. models import Person
-
+from datetime import datetime, date
+from django.core.urlresolvers import reverse
 
 # Create your tests here.
 class PersonDetailTest(TestCase):
-    class Meta:
-        model = Person
-
     def test_pages_person_detail_200(self):
         """
         Test for working template
@@ -49,6 +47,37 @@ class PersonDetailTest(TestCase):
         self.assertContains(response, "42 Coffee Cups Test Assignment")
         self.assertContains(response, "Name")
         self.assertContains(response, "Last name")
+
+
+class PersonModelTest(TestCase):
+    """
+    Test Person model
+    """
+
+    def setUp(self):
+        """
+        Setup object to tests
+        """
+        Person.objects.create(name="test1",
+                               surname='test2',
+                               date_birth="1980-06-03",
+                               bio='test test test',
+                               email='test@email.com',
+                               jabber='test@42cc.co',
+                               skype='test',
+                               other_contacts='other_contacts test',)
+
+    def test_person_first(self):
+        """
+        Test first instance that would be in template
+        """
+        client = Client()
+        response = client.get('/')
+        person = Person.objects.first()
+        self.assertIsInstance(person.date_birth, date)
+        page = self.client.get('/')
+        self.assertContains(page, Person.objects.get(pk=1).name)
+        self.assertNotContains(page, Person.objects.get(pk=2).name)
 
 
 class SomeTests(TestCase):
