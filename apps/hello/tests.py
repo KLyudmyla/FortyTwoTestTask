@@ -1,7 +1,6 @@
+from datetime import date
 from django.test import TestCase, Client
 from. models import Person
-from datetime import datetime, date
-from django.core.urlresolvers import reverse
 
 # Create your tests here.
 class PersonDetailTest(TestCase):
@@ -59,20 +58,19 @@ class PersonModelTest(TestCase):
         Setup object to tests
         """
         Person.objects.create(name="test1",
-                               surname='test2',
-                               date_birth="1980-06-03",
-                               bio='test test test',
-                               email='test@email.com',
-                               jabber='test@42cc.co',
-                               skype='test',
-                               other_contacts='other_contacts test',)
+                              surname='test2',
+                              date_birth="1980-06-03",
+                              bio='test test test',
+                              email='test@email.com',
+                              jabber='test@42cc.co',
+                              skype='test',
+                              other_contacts='other_contacts test',)
 
     def test_person_first(self):
         """
         Test first instance that would be in template
         """
         client = Client()
-        response = client.get('/')
         person = Person.objects.first()
         self.assertIsInstance(person.date_birth, date)
         page = self.client.get('/')
