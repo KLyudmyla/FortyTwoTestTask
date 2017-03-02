@@ -129,5 +129,5 @@ TEMPLATE_DIRS = (
 SOUTH_TESTS_MIGRATE = False
 
 FIXTURE_DIRS = (
-    os.path.join(BASE_DIR, 'apps', 'hello', 'fixtures'),
+    os.path.join(BASE_DIR, 'apps', 'hello', 'fixtures', 'fortytwo_test_task',),
 )
